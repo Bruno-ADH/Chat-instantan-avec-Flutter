@@ -1,3 +1,5 @@
+<b>Chemin vers l'apk dans le projet:</b> <span style="color: blue;">build\app\outputs\flutter-apk\app-release.apk</span>
+
 Démarrage de l'applicaton :
 -   La page d'accueil portant le logo de l'application s'affiche lorsque vous cliquez dessus.
 -   A la première utilisation, il s'affiche ensuite les différents écrans présentant notre application.
@@ -14,4 +16,3 @@ Fonctionnalités de l'application
 -   Une liste de vos discussions à partir de la plus récente.
 - Une option de déconnexion de votre compte avec possibilité de vous reconnecter à tout moment.
 
-Chemin vers l'apk dans le projet: build\app\outputs\flutter-apk\app-release.apk
