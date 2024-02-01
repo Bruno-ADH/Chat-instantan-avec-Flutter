@@ -1,0 +1,54 @@
+name: talky
+description: Communiquez vous plus rapidement.
+
+publish_to: 'none'
+
+version: 1.0.0+1
+
+environment:
+  sdk: '>=2.18.2 <3.0.0'
+
+dependencies:
+  flutter:
+    sdk: flutter
+
+  cupertino_icons: ^1.0.2
+  http: any
+  # firebase
+  firebase_core: ^2.24.2
+  firebase_auth: ^4.16.0
+  firebase_storage: ^11.6.0
+  cloud_firestore: ^4.14.0
+  # Date and Time
+  timeago: any
+  # media
+  image_picker: any
+  # state management
+  provider: any
+  email_validator: ^2.1.17
+  firebase_messaging: ^14.7.10
+  flutter_local_notifications: ^12.0.4
+  google_fonts: any
+  flutter_launcher_icons: ^0.13.1
+
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^2.0.0
+  
+
+flutter_icons:
+  android: "launcher_icon"
+  ios: true
+  image_path: "assets/icon.png"
+  min_sdk_android: 21
+  remove_alpha_ios: true
+  adaptative_icon_foreground: "#AAFBF00"
+  adaptative_icon_background: "assets/icon_rounded.png"
+
+flutter:
+
+  uses-material-design: true
+  assets:
+    - assets/
