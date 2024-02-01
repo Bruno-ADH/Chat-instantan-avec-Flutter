@@ -13,3 +13,5 @@ Fonctionnalités de l'application
 -   Une barre de recherche permettant d'effectuer une recherche rapide de vos discussions.
 -   Une liste de vos discussions à partir de la plus récente.
 - Une option de déconnexion de votre compte avec possibilité de vous reconnecter à tout moment.
+
+Chemin vers l'apk dans le projet: build\app\outputs\flutter-apk\app-release.apk
