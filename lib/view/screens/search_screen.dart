@@ -30,10 +30,7 @@ class _UsersSearchScreenState extends State<UsersSearchScreen> {
           elevation: 0,
           centerTitle: true,
           foregroundColor: Colors.black,
-          title: const Text(
-            'Rechercher un membre',
-            style: TextStyle(fontSize: 25, color: Colors.blue),
-          ),
+          title: const Text(''),
         ),
         body: Padding(
           padding: const EdgeInsets.symmetric(horizontal: 16.0),
@@ -44,14 +41,14 @@ class _UsersSearchScreenState extends State<UsersSearchScreen> {
                 hintText: 'Rechercher...',
                 onChanged: (val) =>
                     Provider.of<FirebaseProvider>(context, listen: false)
-                        .searchUser(val),
+                        .searchUser(val.toUpperCase()),
                 
               ),
               Consumer<FirebaseProvider>(
                 builder: (context, value, child) => Expanded(
                   child: controller.text.isEmpty
                       ? const EmptyWidget(
-                          icon: Icons.search, text: 'Search a User')
+                          icon: Icons.search, text: '')
                       : ListView.builder(
                           padding: const EdgeInsets.all(16),
                           itemCount: value.search.length,
@@ -60,9 +57,10 @@ class _UsersSearchScreenState extends State<UsersSearchScreen> {
                                       FirebaseAuth.instance.currentUser?.uid
                                   ? UserItem(user: value.search[index])
                                   : const SizedBox(),
-                        ),
+                        ), 
                 ),
               ),
+              
             ],
           ),
         ),
