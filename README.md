@@ -1,4 +1,5 @@
-<b>Chemin vers l'apk dans le projet:</b> <span style="color: blue;">build\app\outputs\flutter-apk\app-release.apk</span>
+<b>Chemin vers l'apk dans le projet:</b> <span style="color: blue;">build\app\outputs\flutter-apk\app-release.apk</span></br>
+<b>NB:</b> Le dossier <b>build</b> est généré lors de la compilation
 
 Démarrage de l'applicaton :
 -   La page d'accueil portant le logo de l'application s'affiche lorsque vous cliquez dessus.
